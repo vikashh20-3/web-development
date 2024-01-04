@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <p>this is demo</p>
-    <img src="./imagae.jpeg" alt="laptop image" height="250" width="250">
+    <p>This is Demo Page for our HTML content.</p>
+    <img src="./imagae.jpeg" alt="laptop image" height="350" width="550">
     <br>
     <!-- we can give height width in the image tag and the alt value will show when your image will not loaded or having somme issue -->
     <!-- we can also load images from internet just enter the link in the scr value rest will be the same -->
@@ -84,6 +84,30 @@
         <li>six </li>
         <li>seven </li>
     </ol>
+
+    <!-- FORM -->
+    Get and Post request
+    <!-- In Post request we send so much of data
+    In Get request we usually hit the server and just to tell the server only -->
+    <h1>Html Form for basic knowledge </h1>
+    <form action="post">
+        <label for="username">Enter your name ith</label>
+        <input id="username" type="text" name="name" placeholder="Enter your name here ">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male">
+        <br>
+        <label for="textarea">Enter your comment</label>
+        <br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <div class="select">
+            <select name="names" id="selectnames">
+                <option value="vikash">vikash</option>
+                <option value="manit">manit</option>
+            </select>
+        </div>
+    </form>
 
 
     <script src="script.js"></script>
