@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    const product = {
+        name: 'socks',
+        price: 1090
+    };
+    console.log(product);
+    console.log(product.name)
+    console.log(product.price)
+    product.name='cotton socks';
+    console.log(product);
+
+    // we can add new object into existing object with this 
+    product.newProduct='jacket'
+    product.pricenewProduct=1030;
+    console.log(product);
+
+    //we can also delete the object key 
+    delete product.pricenewProduct
+    console.log(product)
+</script>
+
+</html>
