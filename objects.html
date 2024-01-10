@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+
+</head>
+
+<body>
+
+</body>
+<script>
+    const product = {
+        name: 'socks',
+        price: 1090
+    };
+    console.log(product);
+    console.log(product.name)
+    console.log(product.price)
+    product.name = 'cotton socks';
+    console.log(product);
+
+    // we can add new object into existing object with this 
+    product.newProduct = 'jacket'
+    product.pricenewProduct = 1030;
+    console.log(product);
+
+    //we can also delete the object key 
+    delete product.pricenewProduct
+    console.log(product)
+
+
+    // bracket notatio in objects
+    const product2 = {
+        name: 'shirt'
+    };
+    console.log(product2)
+    console.log(product2['name'])
+    // if we use the undefined value this will show the undefined not the error or we dont't use the bracket notation it will show eror
+    // we can also do some calculation in this  brancket notation
+    // like ['delivery-time '+'another time']
+    console.log(product2['delivery-time'])
+
+    // we can save any type of value inside the objects in javascript 
+    //we can also use nested object inside the object like 
+    const product3 = {
+        name: 'pent',
+        rating: {
+            stars: 4.5,
+            count: 43,
+        },
+        // we can also add function inside the object 
+        func: function function1() {
+            console.log('this is the function inside the object')
+        }
+    }
+
+    console.log(product3.rating.stars);
+    // to achieve the function 
+    console.log(product3.func());
+
+
+    // to convert the javascript object to json object 
+    console.log(product3);
+    const jsonObject = JSON.stringify(product3);
+    console.log(jsonObject)
+
+    // to convert back the json object to the javascript object
+    const javascriptObject = JSON.parse(jsonObject)
+    console.log(javascriptObject);
+
+
+    /// local Strage this value will always be stored even after refresh the page 
+    localStorage.setItem('message', 'hello');
+    console.log(localStorage.getItem('message'))
+
+    // destructing the object values
+    const demoobject = {
+        message: 'demo message',
+        price: 32
+    }
+
+    // this means that the value of demoobject.message and demoobject.price is stored in the variable name message and price
+    const { message, price } = demoobject;
+    console.log(message)
+    console.log(price)
+
+
+
+    //SHORTHAND PROPERTY    
+    const object5 = {
+        // message:message
+        message,
+        // we can achieve this by only using the one name if the key and the variable name is same than we just type one 
+        // method: function demofunction(){
+        //     console.log('Function inside the object5 object')
+        // },
+        // we can also make it short by just simply removing the function name
+            method() {
+
+                console.log("function inside the object5 with shorthand method");
+            }
+
+    }   
+
+
+    // console.log(object5)
+    console.log(object5.method())
+
+</script>
+
+</html>

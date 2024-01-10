@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and loops</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const myArray=[10,20,30]
+    console.log(myArray); 
+    console.log(myArray[0])
+    console.log(myArray[1])
+    console.log(myArray[2])
+
+    myArray[0]=99;
+    console.log(myArray);
+
+    [1,'vikku',{id:1,name:'vikku'},[3,4]];
+
+    console.log(typeof [1,2]);
+    console.log(myArray.length)
+    myArray.push(100);
+    console.log(myArray)
+
+    myArray.splice(0,1)
+    console.log(myArray)
+
+
+
+
+    let i = 1;
+    while (i <= 3) {
+        // console.log(i);
+        i++;
+    }
+
+
+    // for loop
+    for (i = 4; i <= 7; i++) {
+        // console.log(i);
+    }
+
+
+
+    //looping through an array
+    for (let index = 0; index <= todoList.length - 1; index++) {
+        const value = todoList[index];
+        console.log(value);
+    }
+
+    const nums = [1, 2, 4];
+    let total = 0;
+
+    for (i = 0; i < nums.length; i++) {
+        const num = nums[i]
+        total += num;
+        console.log(num)
+
+    }
+    console.log(total);
+
+    const numDoubled = [];
+
+    for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        numDoubled.push(num * 2);
+    }
+    console.log(numDoubled)
+
+
+
+</script>
+
+</html>
