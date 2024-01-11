@@ -5,13 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <style>
+        .btn {
+            height: 30px;
+            background-color: green !important;
+            color: white;
+        }
+
+        .js-todo-grid button {
+            height: 30px;
+            background-color: red;
+        }
+
+        .btn-delete {
+            background-color: red;
+        }
+
+        .js-todo-grid {
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: 200px 150px 50px;
+            column-gap:
+                10px;
+            row-gap: 2px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Todo List Practise 1</h1>
+    <!-- <h1>Todo List Practise 1</h1>
     <input type="text" placeholder="Todo name" class="js-name-input" />
     <button onclick="addTodo() ">Add </button>
-    <div class="js-todo-list"></div>
+    <div class="js-todo-list"></div> -->
+
+    <h1>Advanced</h1>
+    <div class="js-todo-grid">
+
+        <input type="text" class="js-name-input " placeholder="Enter Todo`" />
+        <input type="date" class="js-date-input " />
+        <button onclick="addTodo()" class=" btn btn-red">Add </button>
+    </div>
+    <div class="js-todo-list js-todo-grid "></div>
 </body>
 <script src="./javascriptfortodolist.js">
 
