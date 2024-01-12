@@ -11,23 +11,23 @@
 
 </body>
 <script>
-    const myArray=[10,20,30]
-    console.log(myArray); 
+    const myArray = [10, 20, 30]
+    console.log(myArray);
     console.log(myArray[0])
     console.log(myArray[1])
     console.log(myArray[2])
 
-    myArray[0]=99;
+    myArray[0] = 99;
     console.log(myArray);
 
-    [1,'vikku',{id:1,name:'vikku'},[3,4]];
+    [1, 'vikku', { id: 1, name: 'vikku' }, [3, 4]];
 
-    console.log(typeof [1,2]);
+    console.log(typeof [1, 2]);
     console.log(myArray.length)
     myArray.push(100);
     console.log(myArray)
 
-    myArray.splice(0,1)
+    myArray.splice(0, 1)
     console.log(myArray)
 
 
@@ -48,6 +48,7 @@
 
 
     //looping through an array
+    const todoList = ['this', 'is'];
     for (let index = 0; index <= todoList.length - 1; index++) {
         const value = todoList[index];
         console.log(value);
@@ -74,6 +75,18 @@
 
 
 
+    // 
+
+    const array8 = [4, 5, 5];
+    // to make copy of that variable
+    // we can use array8.slice()
+    const array9 = array8;
+    // it doesn't contain value it just point where the value stored in memory 
+    // it contain only cope of refrence
+
+    array9.push(8)
+    console.log(array8)
+    console.log(array9)
 </script>
 
 </html>
