@@ -9,7 +9,39 @@
 <body>
     
     <script>
-        const  
+        const regularFunction =function(param ,param2){
+            console.log('hello regularfunc')
+            return 5;
+        };
+        regularFunction();
+         const arrowFunction=(param,param2)=>{
+            console.log('hello arrow function');
+            return 5;
+         };
+         arrowFunction();
+         //above both are same 
+
+         const oneParam=(param)=>{
+            console.log(param+2);
+         };
+         oneParam(1);
+
+         const oneLine=()=>2+3;
+
+         console.log(oneLine());
+
+
+         //practice using arrow function  
+
+         ['make dinner',
+        'wash dishes',
+    'watch youtube'].forEach((value,index)=>{
+        if(value=='make dinner'){
+            return;
+        }
+        console.log(value)
+    });
+
     </script>
 </body>
 </html>
