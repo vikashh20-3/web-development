@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    function greeting() {
+        console.log('hello')
+
+    }
+    greeting();
+
+    const num = 2;
+    const function1 = function () {
+        console.log('hello2');
+    };
+    // this is called is anonymous function means no name is needed ot create a function
+    console.log(function1);
+    console.log(typeof function1);
+    function1();
+
+    // in js function is just value 
+
+    const object1 = {
+        num: 2,
+        // fun:function greeting(){
+        //     console.log('hello3')
+        // }
+        fun: function () {
+            console.log('hello3')
+        }
+    };
+    console.log(object1.fun())
+    function display(param) {
+        console.log(param);
+    };
+    display(2);
+
+    //passs fun inside fun
+
+    function run(param) {
+        param();
+    }
+    run(function () {
+        console.log('hello4')
+    });
+
+    // functions as values
+    setTimeout(function(){
+        // console.log('timeout');
+    },3000);
+    //it take two value first is function and other is time in milisecond 1000  milisecond is equal to 1 sec 
+    // it is asynchronous function // means pc will not wait this to run this funciton it will execute another command
+
+    console.log("asynchoronous");
+    
+// set interval
+// this function will keep running this function in given interval
+// setInterval(function(){
+//     console.log('interval')
+// },4000);
+// console.log('next line after interval');
+
+
+// method to loop through an array
+[
+    'make dinner',
+    'wash dishes',
+    'watch youtube'
+].forEach(function(value,index){
+    console.log(index);
+console.log(value);
+});
+
+
+
+
+
+</script>
+
+</html>
